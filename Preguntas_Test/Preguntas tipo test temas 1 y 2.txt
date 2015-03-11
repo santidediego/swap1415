@@ -1,0 +1,27 @@
+¿Cuando es recomendable instalar un servidor web en una sola máquina?
+a) Siempre
+b) Nunca
+c) Si buscamos la escalabilidad del servidor, ya que podemos ampliarla tanto como queramos
+d) Puede ser recomendable en servidores con poco tráfico 
+RESPUESTA CORRECTA: d
+
+Imaginemos que tenemos una máquina servidora, y se produce un incremento del trafico. Nuestra solución es poner una máquina servidora para cada servicio. ¿Qué ventaja tiene esta solución?
+a) Aumentamos la escalabilidad
+b) Aumentamos la velocidad de respuesta del sistema
+c) Los fallos solo afectan a un servicio concreto 
+d) No tiene ninguna ventaja
+RESPUESTA CORRECTA: c
+
+Escoja la respuesta correcta:
+a) Un diseño debe tener redundancia para mejorar la disponibilidad 
+b) Es casi imposible que falle la CPU
+c) Tenemos que evitar las paradas programadas del servidor 
+d) Ninguna de las respuestas es correcta
+RESPUESTA CORRECTA: a
+
+¿Cual de los siguientes es un tipo de escalado?
+a) En profundidad
+b) En anchura
+c) En vertical
+d) Concurrente
+RESPUESTA CORRECTA: c
