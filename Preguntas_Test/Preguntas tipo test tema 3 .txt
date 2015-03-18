@@ -1,0 +1,13 @@
+En una granja web con configuración DMZ doble:
+a) El back-rail se conecta directamente a Internet y el front-rail se conecta a la red interna
+b) El front-rail se conecta directamente a Internet y el back-rail se conecta a la red interna
+c) Da igual como los conectemos 
+d) Un servidor nunca puede estar conectado a un back-rail y un front-rail a la vez
+RESPUESTA CORRECTA: b)
+
+Señalar la respuesta correcta:
+a) El NAT se encarga de mapear	direcciones públicas a direcciones privadas
+b) El NAT no tiene nada que ver con la seguridad del sistema 
+c) Si usamos NAT no es necesario emplear un cortafuegos
+d) Conectándonos a una red segura, por ejemplo la red de un banco, no es necesario poner un cortafuegos 
+RESPUESTA CORRECTA: a)
