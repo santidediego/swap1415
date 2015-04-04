@@ -1,0 +1,13 @@
+Cual de los siguientes algoritmos no es un algoritmo de balanceo de carga 
+a) Algoritmo basado en el menor número de conexiones 
+b) Algoritmo basado en ponderación 
+c) Algoritmo basado en calidad de servicio 
+d) Algoritmo basado en prioridad 
+RESPUESTA CORRECTA : c) 
+
+Cual de las siguientes no es una característica del balanceo de carga global 
+a) Presenta alta disponibilidad 
+b) No requiere conocimiento de los DNS 
+c) Es muy complejo de implementar 
+d) Para que funcione, es necesario un entorno de red muy controlado 
+RESPUESTA CORRECTA : b)
