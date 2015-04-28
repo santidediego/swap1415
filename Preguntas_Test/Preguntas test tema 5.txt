@@ -1,0 +1,15 @@
+El rendimiento, en bits por segundo:
+
+a) Es lo mismo que el ancho de banda de la granja web
+b) Hace referencia a la velocidad a la que el balanceador maneja y pasa el tráfico
+c) Se ve benefiaciado cuanto menor cantidad de información útil haya por paquete
+d) Ninguna de las anteriores es correcta
+RESPUESTA CORRECTA: b)
+
+Con cual de las siguientes herramientas no podemos comprobar el rendimiento de un servidor web:
+a) Siege
+b) Apache Benchmark
+c) OpenWebLoad
+d) TestLoad
+RESPUESTA CORRECTA: d)
+
