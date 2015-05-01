@@ -34,7 +34,7 @@ Ahora vamos a utilizar el archivo crontab para programar que se active el rsync 
 ```sudo nano /etc/crontab.```
 
 Una vez dentro tenemos que añadir la línea:
-0 * * * * santiago rsync -avz -e ssh ```santiago@192.168.1.100:/var/www/html/ /var/www/html/```
+```0 * * * * santiago rsync -avz -e ssh santiago@192.168.1.100:/var/www/html/ /var/www/html/```
 
 De esta forma hacemos que se ejecute una vez al principio de cada hora. El archivo crontab queda de la siguiente manera:
 
