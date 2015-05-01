@@ -11,13 +11,17 @@ sudo chown santiago:santiago -R html
 Después hacemos la orden:
 ```rsync -avz -e ssh santiago@192.168.1.100:/var/www/html/ /var/www/html/```
 Nos queda :
+
 ![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/im1.png)
+
 Haciendo ```
 ls-la /var/www/html
 ```  podemos ver que el directorio se ha copiado correctamente en la máquina 2.
 
 Ahora vamos a configurar ssh para poder conectarnos automaticamente sin contraseña, para ello escribimos: ssh-keygen -t dsa y nos queda algo como lo siguiente:
+
 ![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/im2.png)
+
 El campo enter passphrase lo dejamos en blanco en este caso. La consola nos devuelve donde se ha guardado la identificación y la clave pública.
 
 Nos hemos desplazado a nuestra carpeta y hemos ejecutado el comando:
@@ -33,5 +37,6 @@ Una vez dentro tenemos que añadir la línea:
 0 * * * * santiago rsync -avz -e ssh ```santiago@192.168.1.100:/var/www/html/ /var/www/html/```
 
 De esta forma hacemos que se ejecute una vez al principio de cada hora. El archivo crontab queda de la siguiente manera:
-![](http://)
+
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/im3.png)
 
