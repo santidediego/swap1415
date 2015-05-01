@@ -39,7 +39,7 @@ sudo service nginx restart
 
 Ahora probaremos si funciona el balanceo, haciendo curl desde la máquina A a la dirección del balanceador nos devuelve aleatoriamente las dos máquinas:
 
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/im1.png)
 
 Para ponderar la carga, el apartado server del archivo de configuración tiene que quedar asi:
 
@@ -53,13 +53,13 @@ upstream apaches
 
 Aquí podemos ver como balancea la carga con pesos distintos:
 
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/im2.png)
 
 Ahora pasamos a configurar Haproxy, para ello editamos el archivo ```
 /etc/haproxy/haproxy.cfg
 ``` para que quede de la forma:
 
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/im3.png)
 
 Una vez hecho esto paramos el servicio nginx mediante el comando ```
 sudo service nginx stop
@@ -70,4 +70,4 @@ sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg
 
 Ahora probamos si funciona el balanceo; como podemos ver va mostrando la página de ambos servidores una vez cada uno.
 
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/im4.png)
