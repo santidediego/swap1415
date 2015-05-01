@@ -11,7 +11,7 @@ sudo chown santiago:santiago -R html
 Después hacemos la orden:
 ```rsync -avz -e ssh santiago@192.168.1.100:/var/www/html/ /var/www/html/```
 Nos queda :
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/im1.png)
 Haciendo ```
 ls-la /var/www/html
 ```  podemos ver que el directorio se ha copiado correctamente en la máquina 2.
