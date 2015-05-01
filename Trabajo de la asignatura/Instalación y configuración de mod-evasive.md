@@ -4,6 +4,9 @@ Mod evasive se utiliza para evitar ataques de denegación de servicio o ataques 
 El funcionamiento es muy sencillo, simplemente realiza una acción cuando una determinada IP intenta acceder a un recurso más de n veces m segundos. La acción por defecto consiste en bloquear dicha IP devolviendo un mensaje de error.
 
 ##Instalación
+
+En nuestro caso vamos a realizar la instalación en un servidor Ubuntu Server. La mayoría de información que circula por la red muestra maneras de instalarlo en un equipo con CentOs, por eso nosotros nos centramos únicamente en su instalación en Ubuntu.
+
 Ejecutamos el comando: `sudo apt-get install libapache2-mod-evasive`
 
 Como podemos ver resulta muy complicado instalarlo.
