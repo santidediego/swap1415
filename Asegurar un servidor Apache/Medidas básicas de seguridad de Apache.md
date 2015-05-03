@@ -42,7 +42,7 @@ Tenemos que hacer que Apache no sea capaz de acceder a ningún archivo que no va
 ```
         
 ```
-<Directory /var/www/htdocs>
+<Directory /var/www>
          Order Allow,Deny
          Allow from all
 </Directory>
