@@ -37,7 +37,7 @@ Tenemos que hacer que Apache no sea capaz de acceder a ningún archivo que no va
         Order Deny, Allow
         Deny from all
         Options None
-        AllowOverride None
+        AllowOverride None #Controla que otros usuarios no puedan poner archivos en el directorio
 </Directory>
 ```
         
