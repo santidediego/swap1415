@@ -40,3 +40,4 @@ Es probable que habiendo hecho todo lo anterior, no funcione. En ese caso puede 
   AllowOverride AuthConfig
 </Directory>
 ```
+Más información sobre la directiva `AllowOverride` en http://httpd.apache.org/docs/2.2/mod/core.html#allowoverride
