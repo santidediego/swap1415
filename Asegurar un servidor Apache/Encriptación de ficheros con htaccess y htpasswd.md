@@ -41,3 +41,15 @@ Es probable que habiendo hecho todo lo anterior, no funcione. En ese caso puede 
 </Directory>
 ```
 Más información sobre la directiva `AllowOverride` en http://httpd.apache.org/docs/2.2/mod/core.html#allowoverride
+
+##Un método más rápido
+Una vez hemos comprendido el funcionamiento general de los ficheros .htaccess y .htpasswd, estamos en posición de presentar un método mucho más rápido para proteger un directorio con usuario y contraseña. Para ello, tenemos que ir al archivo **apache2.conf** y añadir una directiva que lo hará todo directamente. Presentamos las directivas para nuestro caso particular, el lector puede adaptarlas sin mayor problema con lo leído anteriormente a sus propias necesidades.
+
+```
+<Directory /var/www/html/secret>
+    AuthUserFile /home/santiago/.htpasswd
+    AuthName "Introduzca el usuario y la clave de acceso"
+    AuthType Basic
+    require valid-user
+</Directory>
+```
