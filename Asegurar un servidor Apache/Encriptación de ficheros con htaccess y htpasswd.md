@@ -32,3 +32,11 @@ Una vez creado, ejecutamos:
 `htpasswd .htpasswd santiago`
 
 Nos pedirá que le pongamos un password, se lo introducimos y ya tenemos nuestro archivo de claves listo. Además este archivo está encriptado en md5 por lo que aunque accedamos a él no podremos ver la clave en texto plano, algo realmente importante.
+
+##Posibles problemas
+Es probable que habiendo hecho todo lo anterior, no funcione. En ese caso puede que sea por la directova AllowOverride. Recordemos en "Principios básicos de seguridad" para qué servía esta directiva; para que otros usuarios no puedan acceder al directorio. Para que funciones, vamos al archivp **apache2.conf** (en Ubuntu Server) y añadimos la siguiente directiva:
+```
+<Directory /var/www/html/secret>
+  AllowOverride AuthConfig
+</Directory>
+```
