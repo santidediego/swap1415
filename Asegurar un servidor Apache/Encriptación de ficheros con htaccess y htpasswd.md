@@ -58,4 +58,4 @@ Una vez añadidas estas directivas, ya solo tenemos que crear un fichero .htpass
 ##Si todo ha ido bien
 Si todo ha funcionado, cuando accedamos al directorio especificado, nos aparecerá una pantalla de login similar a la siguiente:
 
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Asegurar%20un%20servidor%20Apache/Pantalla%20de%20login.png)
