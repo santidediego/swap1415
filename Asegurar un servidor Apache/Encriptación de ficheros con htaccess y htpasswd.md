@@ -54,3 +54,8 @@ Una vez hemos comprendido el funcionamiento general de los ficheros .htaccess y 
 </Directory>
 ```
 Una vez añadidas estas directivas, ya solo tenemos que crear un fichero .htpasswd utilizando el comando visto anteriormente y ya tenemos nuestro directorio protegido. Con este método resulta más cómodo proteger varios directorios, ya que solo tenemos que añadir tantos directorios como queramos al archivo **apache2.conf** en vez de tener que copiar y pegar varias veces el fichero .htaccess.
+
+##Si todo ha ido bien
+Si todo ha funcionado, cuando accedamos al directorio especificado, nos aparecerá una pantalla de login similar a la siguiente:
+
+![](http://)
