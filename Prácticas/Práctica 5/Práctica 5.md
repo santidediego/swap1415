@@ -27,7 +27,7 @@ Para importarla, escribimos:
 
 Configuramos el fichero de configuración siguiendo las directrices del guión de prácticas. Efectivamente nos aparece, una vez terminada la configuración, el parámetro **Seconds_Behind_master: 0**
 
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%205/im1.png)
 
 Ahora vamos a comprobar que efectivamente se actuaizan los datos. Insertamos un dato en el maestro y podemos ver en la siguiente imagen como aparece automáticamente en el esclavo.
 
