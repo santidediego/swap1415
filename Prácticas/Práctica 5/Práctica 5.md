@@ -31,6 +31,6 @@ Configuramos el fichero de configuración siguiendo las directrices del guión d
 
 Ahora vamos a comprobar que efectivamente se actuaizan los datos. Insertamos un dato en el maestro y podemos ver en la siguiente imagen como aparece automáticamente en el esclavo.
 
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%205/im2.png)
 
 
