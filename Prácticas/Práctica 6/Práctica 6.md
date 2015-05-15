@@ -1,7 +1,7 @@
 #Práctica 6: Discos en RAID
 
 Primero de todo, tenemos que ver cuantos discos tenemos instalados en nuestro sistema. Para ello, entramos en la configuración de la máquina virtual y en la pestaña de almacenamiento, podemos ver la siguiente imagen:
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%206/im1.png)
 
 Como podemos ver sólo tenemos un disco. Para poder crear un RAID1 o 'espejo', tenemos que crear otros dos, ya que el que tenemos es el del sistema operativo. Los creamos.
 
@@ -17,7 +17,7 @@ Creamos el directorio en el que se montará la unidad del RAID mediante `sudo mk
 
 Comprobamos si se ha montado correctamente, para ello ejecutamos `sudo mdadm --detail /dev/md0` Este es el resultado
 
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%206/im2.png)
 
 Efectivamente tenemos el RAID1 creado correctamente.
 
@@ -29,7 +29,7 @@ Para ello tenemos que editar el archivo `/etc/fstab`. Vemos que tenemos, entre o
 
 Reiniciando el sistema y ejecutando la orden `mount` vemos que lo ha montado automáticamente al inicio, como se puede ver:
 
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%206/im3.png)
 
 ##Simulando un fallo por software
 
@@ -46,6 +46,6 @@ Eliminamos el disco fallido mediante la orden `sudo mdadm --manage /dev/md127 --
 
 El disco ya ha sido añadido. Si ejecutamos `sudo cat /proc/mdstat` nos encontramos con lo siguiente:
 
-![](http://)
+![](https://github.com/santidediego/swap1415/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%206/im4.png)
 
 Como podemos ver nos indica que el nuevo disco se está integrando en el RAID. Cuando se complete proceso lo tendremos ya perfectamente integrado.
