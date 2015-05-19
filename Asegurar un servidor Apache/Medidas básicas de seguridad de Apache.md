@@ -33,7 +33,6 @@ Tenemos que hacer que Apache no sea capaz de acceder a ningún archivo que no va
 
 ```
 <Directory />
-
         Order Deny, Allow
         Deny from all
         Options None
@@ -69,6 +68,8 @@ Con esta medida evitamos que un atacante con permisos de escritura dentro del di
 
 ###Desactivar los módulos no necesarios
 En muchas ocasiones Apache viene instalado con módulos que no necesitaremos. Estos módulos se encuentran dentro del archivo httpd.conf y vienen antecedidos por la sentencia LoadModule. Solo tenemos que desactivarlos comentando la línea con un # al principio.
+
+Recordemos que en distribuciones Ubuntu no existe este archivo. En este caso, lo haremos comprobando los módulos disponibles en **mods-available** y los módulos que tenemos activos en **mods-enabled**. Para desactivar un módulo activo o activar un módulo inactivo tendremos que trabajar en la terminal con los comandos `a2enmod` para habilitar el módulo y `a2dismod` para deshabilitar el módulo.
 
 ###Disminuir el valor de Timeout
 Disminuyendo el valor del timeout dificultamos un ataque de denegación de servicios. Por defecto suele estar en 300 seg, podemos ponerlo más corto añadiendo
