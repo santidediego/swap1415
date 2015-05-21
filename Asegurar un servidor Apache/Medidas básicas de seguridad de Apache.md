@@ -103,3 +103,8 @@ Podemos utilizar expresiones regulares para limitar el acceso a determinados arc
             Order Allow,Deny
             Deny from all
         </DirectoryMatch>
+        
+##Bibliografía interesante
+En este enlace podemos encontrar una explicación extendida a modo de complemento de algunas directivas explicadas anteriormente.
+http://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-rg-es-4/s1-apache-config.html
+
