@@ -11,7 +11,7 @@ Una vez presentado el escenario, vamos a lanzar una batería de peticiones HTTP 
 
 Nos encontramos con la sorpresa de que la consola nos devuelve lo siguiente:
 
-![](https://github.com/santidediego/swap1415/blob/master/Trabajo%20de%20la%20asignatura/AtaqueDoS.png)
+![](https://github.com/santidediego/swap1415/blob/master/Asegurar%20un%20servidor%20Apache/AtaqueDoS.png)
 
 Fijémonos en el error: aparece un error 403, esto quiere decir que el servidor está rechazando las peticiones HTTP. Además de aparecer la línea en morado, en vez de en su color original.
 
